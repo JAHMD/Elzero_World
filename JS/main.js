@@ -49,12 +49,14 @@ function ubdateCounter() {
     }
   });
 }
-// events countdown function
+// events countdown
+// target day
 const targetDate = new Date("Dec 31, 2022 23:59:59");
 let countDown = setInterval(() => {
+  // current day
   let currentDate = new Date().getTime();
+  // the difference between now and target day
   let diffTime = targetDate - currentDate;
-
   let daysNumber = Math.floor(diffTime / (1000 * 60 * 60 * 24));
   let hoursNumber = Math.floor(
     (diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
