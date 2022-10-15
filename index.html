@@ -14,7 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Template three</title>
+    <title>My world</title>
+    <script src="./JS/main.js" defer></script>
   </head>
   <body>
     <!-- Start header -->
@@ -679,7 +680,7 @@
               <span>80%</span>
             </h4>
             <div class="bar">
-              <div class="fill" style="width: 80%"></div>
+              <div class="fill" data-progress="80%"></div>
             </div>
           </div>
           <div class="skill">
@@ -688,7 +689,7 @@
               <span>85%</span>
             </h4>
             <div class="bar">
-              <div class="fill" style="width: 85%"></div>
+              <div class="fill" data-progress="85%"></div>
             </div>
           </div>
           <div class="skill">
@@ -697,7 +698,7 @@
               <span>70%</span>
             </h4>
             <div class="bar">
-              <div class="fill" style="width: 70%"></div>
+              <div class="fill" data-progress="70%"></div>
             </div>
           </div>
           <div class="skill">
@@ -706,7 +707,7 @@
               <span>80%</span>
             </h4>
             <div class="bar">
-              <div class="fill" style="width: 80%"></div>
+              <div class="fill" data-progress="80%"></div>
             </div>
           </div>
         </div>
@@ -763,19 +764,19 @@
         <div class="data">
           <div class="counters">
             <div class="unit">
-              <span class="num">52</span>
+              <span class="num days">00</span>
               <span>days</span>
             </div>
             <div class="unit">
-              <span class="num">06</span>
+              <span class="num hours">00</span>
               <span>hours</span>
             </div>
             <div class="unit">
-              <span class="num">07</span>
+              <span class="num min">00</span>
               <span>minutes</span>
             </div>
             <div class="unit">
-              <span class="num">15</span>
+              <span class="num sec">00</span>
               <span>seconds</span>
             </div>
           </div>
@@ -889,22 +890,22 @@
       <div class="container">
         <div class="box">
           <i class="far fa-user fa-2x fa-fw"></i>
-          <div class="num">150</div>
+          <div class="num" data-max="150">0</div>
           <span>clients</span>
         </div>
         <div class="box">
           <i class="fas fa-code fa-2x fa-fw"></i>
-          <div class="num">135</div>
+          <div class="num" data-max="135">0</div>
           <span>projects</span>
         </div>
         <div class="box">
           <i class="fas fa-globe-asia fa-2x fa-fw"></i>
-          <div class="num">50</div>
+          <div class="num" data-max="50">0</div>
           <span>countries</span>
         </div>
         <div class="box">
           <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
-          <div class="num">500</div>
+          <div class="num" data-max="500">0</div>
           <span>money</span>
         </div>
       </div>
@@ -996,9 +997,7 @@
           <img src="Images/gallery-06.png" alt="" />
         </div>
       </div>
-      <div class="made-with" style="width: 100%">
-        made with &lt;3 by Elzero
-      </div>
+      <div class="made-with" style="width: 100%">made with &lt;3 by Elzero</div>
     </footer>
     <!-- End footer -->
     <!-- --------------------------------------------------------------------------- -->

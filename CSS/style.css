@@ -53,6 +53,7 @@ html {
   color: var(--black);
   position: relative;
   z-index: 1;
+  user-select: none;
 }
 .main-title:hover {
   transition: 0.2s 0.4s;
@@ -919,8 +920,10 @@ header .container .mega-menu .links li a i {
   background-color: var(--alt-sec-background-color);
 }
 .skills .skill-progress .skill .bar .fill {
+  width: 0;
   height: 100%;
   background-color: var(--blue);
+  transition: calc(var(--main-transition) * 2);
 }
 /* End skills */
 /* Start how it works */
@@ -1045,9 +1048,10 @@ header .container .mega-menu .links li a i {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  user-select: none;
 }
 .events .container .data .counters .unit {
-  width: 75px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   border: 1px solid #d9d9d9;
@@ -1056,6 +1060,7 @@ header .container .mega-menu .links li a i {
   transition: var(--main-transition);
 }
 .events .container .data .counters .unit .num {
+  padding: 0 1rem;
   border-bottom: 1px solid #d9d9d9;
   font-size: 2.19rem;
   font-weight: bold;
@@ -1418,6 +1423,7 @@ header .container .mega-menu .links li a i {
   line-height: 100%;
   font-size: 3.125rem;
   font-weight: bold;
+  transition: var(--main-transition);
 }
 .stats .container .box span {
   text-transform: capitalize;
